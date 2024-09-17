@@ -27,6 +27,19 @@ def get_hashtags():
     print("Hashtags Found: ")
     for i in range(len(hastags_list)):
             print(hastags_list[i])
+def detect_palindrome():
+    name_list =[]
+    print("Sorry our Mayor told us every pokemon must have palindrome name")
+    print("You: wtf, okey fine")
+    pokemone_name = input("Type your pokemon name:")
+    for i in range(len(pokemone_name)):
+        name_list.append(pokemone_name[i])
+    if pokemone_name[0] == pokemone_name[-1]:
+        print(f"The name '{pokemone_name}' is a palindrome")
+    else:
+        print("bro do you know palindrome means")
+
+
             
 
 
@@ -52,6 +65,8 @@ def choose_menu():
             print("Thank you for playing! See you next time!")
         elif user_option == 2:
             get_hashtags()
+        elif user_option ==3:
+            detect_palindrome()
         
         elif user_option == 5:
             get_pokemon_traits()

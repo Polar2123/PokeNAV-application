@@ -7,7 +7,7 @@ This repository is for uploading our parts of the exercises, so we can all see t
 In addition we can also try to help improve the code the others make.
 
 ## Who does what?
-**As of 17/9/2024:**
+**As of 17/9/2024:** <br>
 Mike is doing exercise 1 and 2. <br>
 Ali is doing exercise 3 and 4. <br>
 Sivert is doing exercise 5, 6 and 7.

@@ -1,6 +1,6 @@
 def find_pokemon_bmi():
-    pokemon_height = int(input("Type the pokemon height: "))
-    pokemon_weight = int(input("Type the pokemon weight: "))
+    pokemon_height = float(input("Type the pokemon height: "))
+    pokemon_weight = float(input("Type the pokemon weight: "))
 
     if pokemon_height == 0:
         print("Error - Height cannot be 0.")

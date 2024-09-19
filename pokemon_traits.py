@@ -1,6 +1,3 @@
-def main():
-    get_pokemon_traits()
-
 
 def get_pokemon_traits():
     pokemon_name = input("Type your Pokemon name: ")

@@ -17,9 +17,9 @@ Welcome to the Main Menu. Choose one of the options below:
 7. BMI calculator
 8. Fitness and Healt Tracking
         """
-    print(menu)
     user_option = 2
     while user_option != 1:
+        print(menu)
         user_option = int(input("Type your option:\n"))
         if user_option == 1:
             print("Thank you for playing! See you next time!")

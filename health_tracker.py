@@ -4,9 +4,12 @@ def health_tracker():
     sum_dev =0
     max_day=""
     least_day =""
-    weekday=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturdays"]
-    set_day = input("Step count per day: ")
-    list_set_day = set_day.split(",")
+    weekday=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    set_day = input("Steps Statistics: ")
+    if set_day == "":
+        list_set_day= []
+    else:
+        list_set_day = set_day.split(",")
     leng = len(list_set_day)
     if leng == 7:
         least = int(list_set_day[0])
@@ -25,10 +28,9 @@ def health_tracker():
                 least = int(list_set_day[i])
                 least_day = weekday[i]
     
-        message = f"""
-{mean:.2f} + / - {standart_deviation:.2f} per day.
-Most active day: {max_day}. Least active day:{least_day}
+        message = f"""{mean:.2f} + / - {standart_deviation:.2f} per day.
+Most active day: {max_day}. Least active day: {least_day}.
         """
         print(message)
     else:
-        print(f"Error - Invalid input. The program needs 7 numbers; you typed {leng}  numbers.")
+        print(f"Error - Invalid input. The program needs 7 numbers; you typed {leng} numbers.")

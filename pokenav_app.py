@@ -18,9 +18,14 @@ Welcome to the Main Menu. Choose one of the options below:
 8. Fitness and Healt Tracking
         """
     user_option = 2
+    
     while user_option != 1:
         print(menu)
         user_option = int(input("Type your option:\n"))
+        
+        if user_option > 9 or user_option < 1:
+            user_option = int(input("Error - Invalid option. Please input a number between 1 and (7|8).\n"))
+
         if user_option == 1:
             print("Thank you for playing! See you next time!")
         elif user_option == 2:
@@ -37,9 +42,7 @@ Welcome to the Main Menu. Choose one of the options below:
             find_pokemon_bmi()
         elif user_option ==8:
             health_tracker()
-        else:
-            user_option = int(input("Error - Invalid option. Please input a number between 1 and (7|8)."))
-
+ 
 
 if __name__ == '__main__':
     choose_menu()

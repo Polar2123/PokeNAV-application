@@ -38,7 +38,7 @@ Welcome to the Main Menu. Choose one of the options below:
         elif user_option ==8:
             health_tracker()
         else:
-            print("Error - Invalid option. Please input a number between 1 and (7|8).")
+            int(input("Error - Invalid option. Please input a number between 1 and (7|8)."))
 
 
 if __name__ == '__main__':

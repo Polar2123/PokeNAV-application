@@ -3,11 +3,11 @@ def find_pokemon_bmi():
     pokemon_weight = float(input("Type the pokemon weight: "))
 
 
-    if pokemon_height < 0 and pokemon_weight < 0:
+    if pokemon_height <= 0 and pokemon_weight <= 0:
         print("Error - Height and weight must be positive numbers.")
-    elif pokemon_height < 0:
+    elif pokemon_height <= 0:
         print("Error - Height must be a positive number.")
-    elif pokemon_weight < 0:
+    elif pokemon_weight <= 0:
         print("Error - Weight must be a positive number.")
     else:
         pokemon_bmi = pokemon_weight / (pokemon_height ** 2)

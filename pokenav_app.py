@@ -40,7 +40,6 @@ Welcome to the Main Menu. Choose one of the options below:
         else:
             print("Error - Invalid option. Please input a number between 1 and 9.")
 
-        return user_option
 
 if __name__ == '__main__':
     choose_menu()

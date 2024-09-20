@@ -23,4 +23,3 @@ def get_zodiac_signs():
         user_eeveelution = zodiac_index[2]
         print(f"Zodiac sign: {zodiac_sign}\nElement: {user_element}\nEeveelution: {user_eeveelution}")
 
-get_zodiac_signs()

@@ -5,22 +5,23 @@ from pokemon_traits import get_pokemon_traits
 
 def choose_menu():
     menu = """
-        Welcome to the Main Menu. Choose on of the options below:
-            1.Exit
-            2.Identify hashtags
-            3.Detect a palindrome
-            4.Create an acronym
-            5.Match zodiac sign and element
-            6.Get Pokemon traits
-            7.BMI calculator
-            8.Fitness and Healt Tracking
+Welcome to the Main Menu. Choose one of the options below:
+
+1. Exit
+2. Identify hashtags
+3. Detect a palindrome
+4. Create an acronym
+5. Get Pokemon traits
+6. Match zodiac sign and element
+7. BMI calculator
+8. Fitness and Healt Tracking
         """
     print(menu)
-    user_option = int(input("Type your option:"))
+    user_option = int(input("Type your option:\n"))
     while user_option != 1:
         
         if user_option == 1:
-            print("Thank you for playing! See you next time!")
+            print("Thank you for playing! See you next time!\n")
         elif user_option == 2:
             get_hashtags()
         elif user_option ==3:

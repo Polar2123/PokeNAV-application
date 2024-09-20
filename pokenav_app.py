@@ -17,11 +17,11 @@ Welcome to the Main Menu. Choose one of the options below:
 8. Fitness and Healt Tracking
         """
     print(menu)
-    user_option = int(input("Type your option:\n"))
+    user_option = 2
     while user_option != 1:
-        
+        user_option = int(input("Type your option:\n"))
         if user_option == 1:
-            print("Thank you for playing! See you next time!\n")
+            print("Thank you for playing! See you next time!")
         elif user_option == 2:
             get_hashtags()
         elif user_option ==3:

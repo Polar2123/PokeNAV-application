@@ -12,10 +12,10 @@ def find_pokemon_bmi():
     else:
         pokemon_bmi = pokemon_weight / (pokemon_height ** 2)
         if pokemon_bmi < 29:
-            print(f"BMI = {pokemon_bmi:.2f}. The pokemon is underweight.")
+            print(f"BMI = {pokemon_bmi:.2f}. The Pokemon is underweight.")
         elif pokemon_bmi < 53:
-            print(f"BMI = {pokemon_bmi:.2f}. The pokemon is healthy.")
+            print(f"BMI = {pokemon_bmi:.2f}. The Pokemon is healthy.")
         elif pokemon_bmi < 85:
-            print(f"BMI = {pokemon_bmi:.2f}. The pokemon is overweight.")
+            print(f"BMI = {pokemon_bmi:.2f}. The Pokemon is overweight.")
         elif pokemon_bmi >= 85:
-            print(f"BMI = {pokemon_bmi:.2f}. The pokemon is obese.")
+            print(f"BMI = {pokemon_bmi:.2f}. The Pokemon is obese.")

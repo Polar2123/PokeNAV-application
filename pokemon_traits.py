@@ -13,7 +13,7 @@ def get_pokemon_traits():
         message = f"""{pokemon_name} is a Grass-type pokemon! It is strong against Water-type Pokemons and weak against Fire-type Pokemons.
 """
     else:
-        message = """Error - The Pokemon type provided is not valid. Valid types: Water, fire, grass."""
+        message = """Error - The Pokemon type provided is not valid. Valid types: Water, Fire, Grass."""
     print(message)
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@ def get_hashtags():
                 hashtag_word = list_text[i]
                 if hashtag_word not in hastags_list:
                     hastags_list.append(hashtag_word)
-        print("Hashtags Found:")
+        print("Hashtags found:")
         for i in range(len(hastags_list)):
                 print(hastags_list[i])
     else:

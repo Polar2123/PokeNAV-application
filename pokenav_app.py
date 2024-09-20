@@ -32,7 +32,7 @@ Welcome to the Main Menu. Choose one of the options below:
         elif user_option == 5:
             get_pokemon_traits()
         elif user_option ==6:
-            get_zodiac_sign()
+            get_zodiac_signs()
         elif user_option ==7:
             find_pokemon_bmi()
         elif user_option ==8:

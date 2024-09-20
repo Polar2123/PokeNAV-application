@@ -26,8 +26,8 @@ def health_tracker():
                 least_day = weekday[i]
     
         message = f"""
-        {mean:.2f} + / - {standart_deviation:.2f} per day.
-        Most active day: {max_day}. Least active day:{least_day}
+{mean:.2f} + / - {standart_deviation:.2f} per day.
+Most active day: {max_day}. Least active day:{least_day}
         """
         print(message)
     else:

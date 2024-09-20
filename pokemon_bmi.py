@@ -4,7 +4,7 @@ def find_pokemon_bmi():
 
 
     if pokemon_height < 0 and pokemon_weight < 0:
-        print("Error - Height and weight must be a positive numbers.")
+        print("Error - Height and weight must be positive numbers.")
     elif pokemon_height < 0:
         print("Error - Height must be a positive number.")
     elif pokemon_weight < 0:

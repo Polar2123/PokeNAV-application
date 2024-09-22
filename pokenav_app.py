@@ -24,7 +24,7 @@ Welcome to the Main Menu. Choose one of the options below:
         user_option = int(input("Type your option:\n"))
         
         if user_option > 9 or user_option < 1:
-            user_option = int(input("Error - Invalid option. Please input a number between 1 and (7|8).\n"))
+            user_option = int(input("Error - Invalid option. Please input a number between 1 and 7.\n"))
 
         if user_option == 1:
             print("Thank you for playing! See you next time!")

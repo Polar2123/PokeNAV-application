@@ -3,6 +3,7 @@ from get_hashtags import get_hashtags
 from health_tracker import health_tracker
 from pokemon_traits import get_pokemon_traits
 from zodiac_signs import get_zodiac_signs
+from get_acronym import get_acronym
 from pokemon_bmi import find_pokemon_bmi
 def choose_menu():
     menu = """
@@ -33,7 +34,7 @@ Welcome to the Main Menu. Choose one of the options below:
         elif user_option ==3:
             detect_palindrome()
         elif user_option ==4:
-            pass
+            get_acronym()
         elif user_option == 5:
             get_pokemon_traits()
         elif user_option ==6:

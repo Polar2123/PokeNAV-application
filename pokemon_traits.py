@@ -1,20 +1,16 @@
-
 def get_pokemon_traits():
     pokemon_name = input("Type your Pokemon name: ")
-    pokemon_type = input("Type your Pokemon type: ")
-
+    pokemon_type = input("Type your Pokemon type: ").capitalize()
     if pokemon_type.lower() == "water":
-        message = f"""{pokemon_name} is a Water-type Pokemon! It is strong against Fire-type Pokemons and weak against Grass-type Pokemons.
-"""
+        pokemon_strength = "Fire-type"
+        pokemon_weakness = "Grass-type"
     elif pokemon_type.lower() == "fire":
-        message = f"""{pokemon_name} is a Fire-type pokemon! It is strong against Grass-type Pokemons and weak against Water-type Pokemons.
-"""
+        pokemon_strength = "Grass-type"
+        pokemon_weakness = "Water-type"
     elif pokemon_type.lower() == "grass":
-        message = f"""{pokemon_name} is a Grass-type pokemon! It is strong against Water-type Pokemons and weak against Fire-type Pokemons.
-"""
+        pokemon_strength = "Water-type"
+        pokemon_weakness = "Fire-type"
     else:
-        message = """Error - The Pokemon type provided is not valid. Valid types: Water, Fire, Grass."""
+        message = """Error - The Pokemon type provided is not valid. Valid types: Water, fire, grass."""
+    message = f"{pokemon_name} is a {pokemon_type}-type pokemon! It is strong against {pokemon_strength} Pokemons and weak against {pokemon_weakness} Pokemons."
     print(message)
-
-if __name__ == "__main__":
-    main()

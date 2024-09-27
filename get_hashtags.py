@@ -1,18 +1,15 @@
 def get_hashtags():
-    #intilize value
-    hastags_list=[]
-    #user input
-    text = input("Type your post: ")
-    #check user input contains #
-    if "#" in text:
-        list_text = text.split(" ") #split to list
-        for i in range(len(list_text)):
-            if "#" in list_text[i][0]: 
-                hashtag_word = list_text[i]
-                if hashtag_word not in hastags_list:
-                    hastags_list.append(hashtag_word)
+    hashtags_list=[]
+    hashtag=""
+
+    sentence = input("Type your post: ")
+    text_list = sentence.split(" ")
+    for text in text_list:
+        if "#" in text[0] and text not in hashtags_list: 
+            hashtags_list.append(text)
+    if hashtags_list != []:
         print("Hashtags found:")
-        for i in range(len(hastags_list)):
-                print(hastags_list[i])
+        for hashtag in hashtags_list:
+                print(hashtag)
     else:
-        print("No hashtags found.\n")
+         print("No hashtags found.\n")
